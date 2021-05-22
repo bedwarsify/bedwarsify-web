@@ -38,7 +38,7 @@
               hover:text-gray-700
               hover:border-gray-700
             "
-            href="https://discord.gg/XyEv5JQ53S"
+            href="https://discord.gg/EMgB7nrNJm"
           >
             Discord
           </a>
