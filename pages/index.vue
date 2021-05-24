@@ -18,7 +18,15 @@
           A simple but feature-rich Hypixel Bed Wars anti-sniping overlay.
         </p>
 
-        <div class="flex space-x-4 items-center">
+        <div
+          class="
+            flex flex-col
+            sm:flex-row
+            space-y-4
+            sm:space-y-0 sm:space-x-4
+            items-center
+          "
+        >
           <!--
             <a
               class="px-6 py-3 text-lg bg-primary rounded-xl hover:text-gray-300"
@@ -28,7 +36,9 @@
             </a>
           -->
 
-          <span class="px-6 py-3 text-lg bg-primary rounded-xl">
+          <span
+            class="px-6 py-3 w-full sm:w-auto text-lg bg-primary rounded-xl"
+          >
             Coming May 26th
           </span>
 
@@ -36,17 +46,34 @@
             class="
               px-6
               py-3
-              text-lg
-              bg-gray-100
-              text-blurple
+              w-full
+              sm:w-auto
+              text-lg text-blurple
               border border-blurple
               rounded-xl
-              hover:text-gray-700
-              hover:border-gray-700
+              hover:text-gray-400
+              hover:border-gray-400
             "
             href="https://discord.gg/EMgB7nrNJm"
           >
             Discord
+          </a>
+
+          <a
+            class="
+              px-6
+              py-3
+              w-full
+              sm:w-auto
+              text-lg text-white
+              border border-white
+              rounded-xl
+              hover:text-gray-400
+              hover:border-gray-400
+            "
+            href="https://github.com/bedwarsify"
+          >
+            GitHub
           </a>
         </div>
       </div>
