@@ -27,20 +27,12 @@
             items-center
           "
         >
-          <!--
-            <a
-              class="px-6 py-3 text-lg bg-primary rounded-xl hover:text-gray-300"
-              href="https://github.com/bedwarsify/bedwarsify-overlay/releases/latest"
-            >
-              Download
-            </a>
-          -->
-
-          <span
-            class="px-6 py-3 w-full sm:w-auto text-lg bg-primary rounded-xl"
+          <a
+            class="px-6 py-3 text-lg bg-primary rounded-xl hover:text-gray-300"
+            href="https://github.com/bedwarsify/bedwarsify-overlay/releases/latest"
           >
-            Coming May 26th
-          </span>
+            Download
+          </a>
 
           <a
             class="
