@@ -27,16 +27,15 @@
             items-center
           "
         >
-          <a
+          <button
             class="px-6 py-3 text-lg bg-primary rounded-xl hover:text-gray-300"
-            href="https://github.com/bedwarsify/bedwarsify-overlay/releases/latest"
-            @click.prevent="
-              downloadModal = true
+            @click="
               downloadModalView = 'DEFAULT'
+              downloadModal = true
             "
           >
             Download
-          </a>
+          </button>
 
           <a
             class="
@@ -424,7 +423,7 @@
 
           <a
             v-if="downloadModalView !== 'DEFAULT'"
-            href="https://github.com/bedwarsify/bedwarsify-overlay/releases/latest"
+            :href="downloadLinks.github[downloadModalView.toLowerCase()]"
             class="
               flex
               md:flex-col
@@ -684,10 +683,48 @@ export default Vue.extend({
           },
         ],
       },
+      downloadLinks: {
+        github: {
+          windows:
+            'https://github.com/bedwarsify/bedwarsify-overlay/releases/latest',
+          macos:
+            'https://github.com/bedwarsify/bedwarsify-overlay/releases/latest',
+          linux:
+            'https://github.com/bedwarsify/bedwarsify-overlay/releases/latest',
+        },
+      },
     }
   },
   head: {
     title: 'Bedwarsify Overlay',
+  },
+  async mounted() {
+    const release: {
+      assets: {
+        name: string
+        // eslint-disable-next-line camelcase
+        browser_download_url: string
+      }[]
+    } = await (
+      await fetch(
+        'https://api.github.com/repos/bedwarsify/bedwarsify-overlay/releases/latest'
+      )
+    ).json()
+
+    this.downloadLinks.github.windows =
+      release.assets.find((asset) => asset.name.endsWith('.exe'))
+        ?.browser_download_url ??
+      'https://api.github.com/repos/bedwarsify/bedwarsify-overlay/releases/latest'
+
+    this.downloadLinks.github.macos =
+      release.assets.find((asset) => asset.name.endsWith('.dmg'))
+        ?.browser_download_url ??
+      'https://api.github.com/repos/bedwarsify/bedwarsify-overlay/releases/latest'
+
+    this.downloadLinks.github.linux =
+      release.assets.find((asset) => asset.name.endsWith('.AppImage'))
+        ?.browser_download_url ??
+      'https://api.github.com/repos/bedwarsify/bedwarsify-overlay/releases/latest'
   },
 })
 </script>
