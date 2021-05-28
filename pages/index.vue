@@ -25,10 +25,21 @@
             space-y-4
             sm:space-y-0 sm:space-x-4
             items-center
+            w-full
+            sm:w-auto
           "
         >
           <button
-            class="px-6 py-3 text-lg bg-primary rounded-xl hover:text-gray-300"
+            class="
+              px-6
+              py-3
+              w-full
+              sm:w-auto
+              text-lg
+              bg-primary
+              rounded-xl
+              hover:text-gray-300
+            "
             @click="
               downloadModalView = 'DEFAULT'
               downloadModal = true
