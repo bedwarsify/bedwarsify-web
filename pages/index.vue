@@ -54,6 +54,22 @@
               py-3
               w-full
               sm:w-auto
+              text-lg
+              bg-gray-700
+              rounded-xl
+              hover:text-gray-300
+            "
+            href="https://docs.bedwarsify.com/overlay"
+          >
+            Docs
+          </a>
+
+          <a
+            class="
+              px-6
+              py-3
+              w-full
+              sm:w-auto
               text-lg text-blurple
               border border-blurple
               rounded-xl
