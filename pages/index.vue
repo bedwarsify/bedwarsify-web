@@ -708,6 +708,40 @@ export default Vue.extend({
               },
             ],
           },
+          {
+            name: 'macOS Support',
+            alternatives: [
+              {
+                available: 'YES',
+              },
+              {
+                available: 'NO',
+              },
+              {
+                available: 'YES',
+              },
+              {
+                available: 'YES',
+              },
+            ],
+          },
+          {
+            name: 'Linux Support',
+            alternatives: [
+              {
+                available: 'YES',
+              },
+              {
+                available: 'NO',
+              },
+              {
+                available: 'NO',
+              },
+              {
+                available: 'NO',
+              },
+            ],
+          },
         ],
       },
       downloadLinks: {
