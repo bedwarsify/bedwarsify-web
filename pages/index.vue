@@ -103,7 +103,7 @@
       <img
         alt=""
         class="border border-gray-600 rounded-xl"
-        src="@/assets/overlay-screenshot.png"
+        src="@/assets/overlay/screenshot.png"
       />
     </div>
 
