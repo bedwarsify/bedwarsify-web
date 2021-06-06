@@ -623,7 +623,7 @@ export default Vue.extend({
             ],
           },
           {
-            name: 'Unnicking',
+            name: 'Unnick yourself',
             alternatives: [
               {
                 available: 'YES',
