@@ -538,7 +538,7 @@ export default Vue.extend({
             ],
           },
           {
-            name: 'Displays stats',
+            name: 'Display stats',
             alternatives: [
               {
                 available: 'YES',
@@ -551,6 +551,23 @@ export default Vue.extend({
               },
               {
                 available: 'YES',
+              },
+            ],
+          },
+          {
+            name: 'Track stats',
+            alternatives: [
+              {
+                available: 'YES',
+              },
+              {
+                available: 'NO',
+              },
+              {
+                available: 'NO',
+              },
+              {
+                available: 'NO',
               },
             ],
           },
