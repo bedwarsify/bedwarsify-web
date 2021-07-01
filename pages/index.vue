@@ -616,6 +616,24 @@ export default Vue.extend({
             ],
           },
           {
+            name: 'Customizable columns',
+            alternatives: [
+              {
+                available: 'YES',
+              },
+              {
+                available: 'NO',
+              },
+              {
+                available: 'PARTIAL',
+                comment: 'Maximum number of columns is limited to 8.',
+              },
+              {
+                available: 'NO',
+              },
+            ],
+          },
+          {
             name: 'Simple UI',
             alternatives: [
               {
@@ -701,16 +719,16 @@ export default Vue.extend({
             ],
           },
           {
-            name: 'Custom sort',
+            name: 'Fully customizable sort',
             alternatives: [
               {
                 available: 'YES',
               },
               {
-                available: 'PAYWALL',
+                available: 'NO',
               },
               {
-                available: 'YES',
+                available: 'NO',
               },
               {
                 available: 'NO',
