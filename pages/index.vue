@@ -702,6 +702,23 @@ export default Vue.extend({
             ],
           },
           {
+            name: 'Unnick teammates',
+            alternatives: [
+              {
+                available: 'YES',
+              },
+              {
+                available: 'NO',
+              },
+              {
+                available: 'NO',
+              },
+              {
+                available: 'NO',
+              },
+            ],
+          },
+          {
             name: 'Auto add chat mentions',
             alternatives: [
               {
