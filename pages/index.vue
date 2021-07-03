@@ -599,6 +599,23 @@ export default Vue.extend({
             ],
           },
           {
+            name: 'Bot-based anti-sniping',
+            alternatives: [
+              {
+                available: 'YES',
+              },
+              {
+                available: 'PAYWALL',
+              },
+              {
+                available: 'NO',
+              },
+              {
+                available: 'NO',
+              },
+            ],
+          },
+          {
             name: 'Report-based anti-sniping',
             alternatives: [
               {
