@@ -154,7 +154,7 @@
                 :key="feature.alternatives.indexOf(alternative)"
                 class="p-3 lg:px-6"
               >
-                <div class="flex justify-center items-center group">
+                <div class="flex justify-center items-center group relative">
                   <svg
                     v-if="alternative.available === 'YES'"
                     class="text-green-400 h-8 w-8"
@@ -244,6 +244,7 @@
                       bg-gray-700
                       rounded-xl
                       p-3
+                      z-10
                     "
                   >
                     {{ alternative.comment }}
