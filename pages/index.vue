@@ -697,7 +697,7 @@ export default Vue.extend({
                 available: 'YES',
               },
               {
-                available: 'NO',
+                available: 'YES',
               },
             ],
           },
