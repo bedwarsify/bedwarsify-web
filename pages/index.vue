@@ -76,7 +76,7 @@
               hover:text-gray-400
               hover:border-gray-400
             "
-            href="https://discord.gg/XyEv5JQ53S"
+            href="https://discord.gg/cubelify"
           >
             Discord
           </a>
