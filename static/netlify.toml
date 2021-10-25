@@ -1,4 +1,4 @@
 [[redirects]]
-from = "/discord"
-to = "https://discord.gg/cubelify"
-status = 302
+from = "/*"
+to = "https://cubelify.com"
+status = 301
