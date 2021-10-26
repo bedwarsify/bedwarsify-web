@@ -1,4 +1,4 @@
 [[redirects]]
-from = "/*"
+from = "*"
 to = "https://cubelify.com"
 status = 301
